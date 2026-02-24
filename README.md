@@ -1,3 +1,15 @@
+📂 Portable Suite Structure (Important)
+ParrMotion is a portable, no-installation utility. However, to ensure high-definition video processing and format merging, the executable requires its core engine components to be in the same folder.
+
+Your local folder should contain these three essential files to function correctly:
+
+ParrMotion.exe — The primary user interface and logic controller.
+
+ffmpeg.exe — The core engine used for merging high-quality video and audio streams.
+
+ffprobe.exe — The analysis tool used to detect media information and resolutions.
+
+Note: If ffmpeg.exe is missing, the application will still download raw files but will fail to combine them into a single playable video. Always run the program from a folder containing all three components.
 🚀 ParrMotion Downloader v1.0.0
 ParrMotion is a minimalist, high-performance web media acquisition utility. Built for speed and reliability, it provides a seamless interface for downloading high-fidelity video and audio from thousands of platforms globally.
 
