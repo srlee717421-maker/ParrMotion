@@ -1,15 +1,16 @@
 📂 Portable Suite Structure (Important)
-ParrMotion is a portable, no-installation utility. However, to ensure high-definition video processing and format merging, the executable requires its core engine components to be in the same folder.
-
-Your local folder should contain these three essential files to function correctly:
+ParrMotion is a portable, no-installation utility. To ensure high-definition video processing and playback verification, the following components should be kept in the same folder:
 
 ParrMotion.exe — The primary user interface and logic controller.
 
-ffmpeg.exe — The core engine used for merging high-quality video and audio streams.
+ffmpeg.exe — (Essential) The core engine used for merging high-quality video and audio streams.
 
-ffprobe.exe — The analysis tool used to detect media information and resolutions.
+ffprobe.exe — (Essential) The analysis tool used to detect media metadata and resolutions.
 
-Note: If ffmpeg.exe is missing, the application will still download raw files but will fail to combine them into a single playable video. Always run the program from a folder containing all three components.
+ffplay.exe — (Optional) A lightweight media player used by the engine for technical stream verification.
+
+Note: While ffplay.exe is not strictly required for the core download/merge process, keeping all four files together ensures maximum compatibility with all yt-dlp backend features.
+
 🚀 ParrMotion Downloader v1.0.0
 ParrMotion is a minimalist, high-performance web media acquisition utility. Built for speed and reliability, it provides a seamless interface for downloading high-fidelity video and audio from thousands of platforms globally.
 
@@ -41,7 +42,7 @@ Main Executable: ParrMotion.exe
 Required Binaries: Both ffmpeg.exe and ffprobe.exe must be placed in the same directory as the main executable to enable high-definition media merging and analysis.
 
 👨‍💻 Development Information
-Author: srlee
+Powered by yt-dlp
 
 Consulting AI: Google Gemini 3.1 Pro
 
